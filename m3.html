@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Seven Wonders</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('1 (10).jpeg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the whole screen */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+        header {
+            background: linear-gradient(to right, #191b14, #6d626c);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            font-size: 2.5rem;
+        }
+
+        .wonders-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .wonder-item {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .wonder-item:hover {
+            transform: scale(1.1);
+        }
+
+        .wonder-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .wonder-item .wonder-name {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 1.2rem;
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .content-section {
+            display: none;
+            padding: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .wonder-img {
+            max-width: 100%;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .wonder-video {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: linear-gradient(to right, #191b14, #6d626c);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    THE SEVEN WONDERS
+</header>
+<h2> </h2>
+<div class="wonders-list">
+    <div class="wonder-item" onclick="showWonder('great-wall')">
+        <img src="1 (5).jpeg" alt="Great Wall of China">
+        <div class="wonder-name">Great Wall of China</div>
+    </div>
+    <div class="wonder-item" onclick="showWonder('petra')">
+        <img src="1 (8).jpeg" alt="Petra">
+        <div class="wonder-name">Petra</div>
+    </div>
+    <div class="wonder-item" onclick="showWonder('colosseum')">
+        <img src="1 (6).jpeg" alt="Colosseum">
+        <div class="wonder-name">Colosseum</div>
+    </div>
+    <div class="wonder-item" onclick="showWonder('christ-redeemer')">
+        <img src="1 (4).jpeg" alt="Christ the Redeemer">
+        <div class="wonder-name">Christ the Redeemer</div>
+    </div>
+    <div class="wonder-item" onclick="showWonder('machu-picchu')">
+        <img src="1 (9).jpeg" alt="Machu Picchu">
+        <div class="wonder-name">Machu Picchu</div>
+    </div>
+    <div class="wonder-item" onclick="showWonder('chichen-itza')">
+        <img src="1 (3).jpeg" alt="Chichen Itza">
+        <div class="wonder-name">Chichen Itza</div>
+    </div>
+    <div class="wonder-item" onclick="showWonder('taj-mahal')">
+        <img src="1 (2).jpeg" alt="Taj Mahal">
+        <div class="wonder-name">Taj Mahal</div>
+    </div>
+</div>
+
+<!-- Great Wall of China -->
+<div id="great-wall" class="content-section">
+    <h2>The Great Wall of China</h2>
+    <iframe width="100%" height="450px" 
+    src="https://www.youtube.com/embed/2AR0EnEzaj4?autoplay=1&mute=1&loop=1&playlist=2AR0EnEzaj4" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+</iframe>
+
+
+    <p>The Great Wall of China
+        The Great Wall of China is a historic fortification stretching over 21,196 kilometers (13,171 miles) across northern China. Built over several dynasties, it was primarily constructed for defense against invasions by nomadic tribes, such as the Mongols.
+        
+        Construction Period: Started in the 7th century BC, with major work during the Qin Dynasty (221–206 BC) and the Ming Dynasty (1368–1644 AD).
+        Materials: The wall was made from various materials, including stone, brick, and earth depending on the region.
+        Purpose: Defense, surveillance, and communication. Watchtowers and signal fires were used to send messages quickly across long distances.
+        Cultural Significance: It symbolizes Chinese strength and determination. In 1987, it became a UNESCO World Heritage Site.
+        Tourism: Popular sections near Beijing (like Badaling and Mutianyu) attract millions of tourists annually.
+        Fun fact: The Great Wall is often said to be visible from space, though this is a myth!
+        
+        </p>
+    <img class="wonder-img" src="1 (5).jpeg" alt="Great Wall of China">
+</div>
+
+<!-- Petra -->
+<div id="petra" class="content-section">
+    <h2>Petra</h2>
+    <iframe width="100%" height="450px" 
+    src="https://www.youtube.com/embed/5Bdi__qG7Fc?autoplay=1&mute=1&loop=1&playlist=5Bdi__qG7Fc" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+</iframe>
+
+    <p>Petra
+        Petra is an ancient city in southern Jordan, famous for its rock-cut architecture and water conduit system. It was the capital of the Nabataean Kingdom around the 4th century BC.
+        
+        Location: Nestled in a desert valley, Petra is surrounded by red sandstone mountains, giving it a unique appearance often called the "Rose City."
+        Historical Significance: Petra flourished as a trade hub for spices, silk, and other goods. It was later abandoned in the 7th century due to earthquakes and invasions.
+        Famous Sites: The most iconic site is Al-Khazneh, also known as the Treasury, a stunning building carved into the rock face.
+        Rediscovery: Western explorers rediscovered Petra in 1812. It is now a UNESCO World Heritage Site and one of the New Seven Wonders of the World.
+        Tourism: Today, Petra attracts millions of visitors who come to explore its ancient tombs, temples, and intricate passageways.
+        Fun fact: Petra's incredible architecture was carved entirely by hand into the sandstone cliffs!.</p>
+    <img class="wonder-img" src="1 (8).jpeg" alt="Petra">
+    
+</div>
+
+<!-- Colosseum -->
+<div id="colosseum" class="content-section">
+    <h2>The Colosseum</h2>
+    <iframe width="100%" height="450px" 
+    src="https://www.youtube.com/embed/56tlOtVn40c?autoplay=1&mute=1&loop=1&playlist=56tlOtVn40c" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+</iframe>
+
+    <p>The Colosseum is an ancient amphitheater in Rome, Italy, known for gladiatorial contests and public spectacles. 
+        Here's a brief overview of The Colosseum:
+        
+        The Colosseum
+        The Colosseum, also known as the Flavian Amphitheater, is an iconic ancient Roman structure located in Rome, Italy. It was completed in 80 AD during the reign of Emperor Titus.
+        
+        Purpose: The Colosseum was used for gladiatorial contests, public spectacles, and animal hunts, making it a central place for Roman entertainment.
+        Size: It could hold up to 50,000 spectators, who watched thrilling battles and events.
+        Structure: The Colosseum is made of concrete and stone and features a complex system of underground passages and chambers for animals and gladiators.
+        Decline: After the fall of the Roman Empire, the Colosseum suffered damage from earthquakes and was looted for building materials.
+        Modern Day: Today, it is a major tourist attraction and a symbol of ancient Roman engineering. It was also recognized as one of the New Seven Wonders of the World.
+        Fun fact: The Colosseum's architecture influenced many modern-day sports stadiums!</p>
+    <img class="wonder-img" src="1 (6).jpeg" alt="Colosseum">
+    
+</div>
+
+<!-- Christ the Redeemer -->
+<div id="christ-redeemer" class="content-section">
+    <h2>Christ the Redeemer</h2>
+    <iframe width="100%" height="450px" 
+    src="https://www.youtube.com/embed/oq-2m2diCy8?autoplay=1&mute=1&loop=1&playlist=oq-2m2diCy8" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+</iframe>
+
+
+    <p>The Christ the Redeemer statue stands atop Corcovado Mountain in Rio de Janeiro, Brazil, and is one of the New Seven Wonders of the World. Christ the Redeemer
+        Christ the Redeemer is an iconic statue of Jesus Christ located in Rio de Janeiro, Brazil. Standing atop Corcovado Mountain, it overlooks the city and has become a symbol of Christianity and Brazilian culture.
+        
+        Location: Corcovado Mountain, Rio de Janeiro, Brazil.
+        Height: The statue itself is 98 feet (30 meters) tall, with an arm span of 92 feet (28 meters).
+        Material: Made of reinforced concrete and soapstone for the exterior, the statue is both durable and stunningly detailed.
+        Construction: The statue was completed in 1931 after nearly 10 years of work, funded through donations from the Brazilian people and Catholic communities.
+        Significance: It symbolizes peace, love, and unity and is a major pilgrimage site for millions of Christian visitors.
+        UNESCO World Heritage Site: Part of the Tijuca National Park, the statue was designated a UNESCO World Heritage Site in 1987.
+        New Seven Wonders of the World: Christ the Redeemer was voted as one of the New Seven Wonders of the World in 2007.
+        Tourism: One of Brazil’s most famous landmarks, it attracts millions of tourists annually who come to admire the breathtaking panoramic views of Rio de Janeiro from the mountaintop.</p>
+    <img class="wonder-img" src="1 (4).jpeg" alt="Christ the Redeemer">
+    
+</div>
+
+<!-- Machu Picchu -->
+<div id="machu-picchu" class="content-section">
+    <h2>Machu Picchu</h2>
+    <iframe width="100%" height="450px" 
+    src="https://www.youtube.com/embed/lNIEZ61PyG0" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+</iframe>
+
+
+    <p>Machu Picchu is a 15th-century Inca citadel located in the Andes mountains of Peru, one of the most iconic archaeological sites in the world.
+        Machu Picchu
+Machu Picchu is a 15th-century Inca citadel located in the Andes Mountains of Peru, one of the most famous and mysterious archaeological sites in the world.
+
+Location: Situated at an altitude of about 2,430 meters (7,970 feet), it overlooks the Urubamba River Valley.
+History: Built around 1450 AD during the reign of Inca Emperor Pachacuti, Machu Picchu is believed to have been a royal estate or religious site.
+Structure: The site features terraces, temples, palaces, and plazas, all made of precisely cut stonework without mortar, which is a hallmark of Incan engineering.
+Rediscovery: It remained hidden from the outside world until 1911, when it was rediscovered by American historian Hiram Bingham.
+Modern Day: Now a UNESCO World Heritage Site, Machu Picchu is one of the most visited tourist attractions in South America and is considered one of the New Seven Wonders of the World.
+    </p>
+    <img class="wonder-img" src="1 (9).jpeg" alt="Machu Picchu">
+   
+</div>
+
+<!-- Chichen Itza -->
+<div id="chichen-itza" class="content-section">
+    <h2>Chichen Itza</h2>
+    <iframe width="100%" height="450px" 
+    src="https://www.youtube.com/embed/Qif9uq0rMrs" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+</iframe>
+
+    <p>Chichen Itza is a large pre-Columbian archaeological site built by the Maya civilization in Mexico's Yucatán Peninsula. Chichen Itza
+        Chichen Itza is a large Mayan archaeological site located on the Yucatán Peninsula in Mexico. It was one of the most important cities of the Maya civilization and is now a major tourist destination.
+        
+        Location: Yucatán Peninsula, Mexico.
+        Historical Significance: Chichen Itza was a political, economic, and religious center of the Maya civilization, flourishing between the 7th and 10th centuries.
+        Main Attractions:
+        El Castillo (Temple of Kukulkan): A step pyramid dedicated to the serpent god Kukulkan, famous for its astronomical alignment. During the spring and fall equinoxes, shadows cast by the sun create the illusion of a serpent slithering down the steps.
+        The Great Ball Court: The largest ball court in ancient Mesoamerica, where the Maya played a ceremonial game with symbolic religious meaning.
+        The Observatory (El Caracol): A structure believed to have been used for astronomical observations.
+        Cultural Importance: Chichen Itza is known for its advanced understanding of astronomy, which was deeply embedded in Mayan religion and architecture.
+        UNESCO World Heritage Site: It was designated a UNESCO World Heritage Site in 1988 and is considered one of the New Seven Wonders of the World.
+        Tourism: Today, it is one of Mexico's most visited archaeological sites, attracting tourists and researchers from around the globe.
+        </p>
+    <img class="wonder-img" src="1 (3).jpeg" alt="Chichen Itza">
+    
+</div>
+
+<!-- Taj Mahal -->
+<div id="taj-mahal" class="content-section">
+    <h2>The Taj Mahal</h2>
+    <iframe width="100%" height="450px" 
+    src="https://www.youtube.com/embed/DV_r9tw8uo8?si=ReGvrG1aDAZaMp9h" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+</iframe>
+    <p>The Taj Mahal is an ivory-white marble mausoleum built in memory of Mumtaz Mahal in Agra, India.Taj Mahal
+        The Taj Mahal is a white marble mausoleum located in Agra, India. It is one of the most iconic landmarks in the world and a symbol of love and devotion.
+        
+        Location: Situated on the banks of the Yamuna River in Agra, Uttar Pradesh, India.
+        Built by: Emperor Shah Jahan in memory of his beloved wife, Mumtaz Mahal, who died during childbirth in 1631.
+        Architecture: The Taj Mahal is a masterpiece of Mughal architecture, combining elements from Persian, Ottoman Turkish, and Indian architectural styles. It features a large dome, four minarets, and intricate marble inlay work.
+        Symbolism: The Taj Mahal is widely regarded as a symbol of eternal love due to its emotional backstory and stunning beauty.
+        UNESCO World Heritage Site: It was declared a UNESCO World Heritage Site in 1983 and is considered one of the New Seven Wonders of the World.
+        Tourism: It attracts millions of visitors every year and is one of the most visited monuments in India.
+        Fun fact: The Taj Mahal changes color depending on the time of day — it looks pinkish in the morning, white during the day, and golden under moonlight.</p>
+    <img class="wonder-img" src="1 (1).jfif" alt="Taj Mahal">
+    
+</div>
+
+<footer>
+    &copy; Created by If3k Students For Applied Multimedia Techknowledge 
+    <br>
+    Group Leader : Prakash Nandkishor Kankal 
+    <br>
+    Members : 1. Harhwardhan Santosh Satpute 
+              2. Shubham Babarao Shinde
+
+</footer>
+
+<script>
+    function showWonder(wonderId) {
+        // Hide all content sections
+        const sections = document.querySelectorAll('.content-section');
+        sections.forEach(section => section.style.display = 'none');
+
+        // Show the selected wonder
+        const selectedWonder = document.getElementById(wonderId);
+        selectedWonder.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
